@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="./img/bookmark.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="text-center">
+            <h1 class="my-5">Bookmarker</h1>
+            <h2 class="pt-4 m-auto"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                    class="fa-solid fa-bookmark"></i></h2>
+        </div>
+        <div class="container px-4 m-auto my-4">
+            <form action="">
+                <label for="" class="my-2 fw-bold"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+                <input type="text" placeholder="Bookmark Name" class="form-control mb-3" id="siteName" required>
+                <label for="" class="my-2 fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+                <input type="url" action="URL" placeholder="Website URL" class="form-control" id="siteUrl" required>
+            </form>
+        </div>
+        <div class="text-center bord pb-4 m-auto">
+            <button class="btn px-5 py-1 submit text-white fs-5" id="submit" onclick="isValidUrl()">Submit</button>
+        </div>
+        <div class="container my-4 mx-auto">
+            <input type="text" oninput="searchUrl()" placeholder="Search by bookMark name" id="search"
+                class="form-control w-25 m-auto my-4">
+            <div class="row" id="cardbody"></div>
+        </div>
+
+        <!-- <div class="bg-danger py-5 w-25 position-absolute m-auto text-center text-white top-50 start-50 translate-middle rounded-3">
+            <p class="fs-4 fw-bold">site URL must be a valid one</p>
+            <p class="text-white">For Ex: https://www.siteName.com/</p>
+        </div> -->
+    </section>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
