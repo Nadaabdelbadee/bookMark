@@ -59,7 +59,7 @@ function display(arr) {
             <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${arr[i].name}</h5>
                 <a href="#" class="my-2 text-muted" onclick="updateUrl(${i})">Rename</a>
-                <a href="https://${arr[i].url}" class="btn visit my-2" target="_blank"><i class="fa-solid fa-eye pe-1"></i> Visit</a>
+                <a href="${arr[i].url}" class="btn visit my-2" target="_blank"><i class="fa-solid fa-eye pe-1"></i> Visit</a>
                 <a href="#" class="btn delete" onclick="deleteUrl(${i})"><i class="fa-solid fa-trash pe-1"></i> Delete</a>
             </div>
         </div>
